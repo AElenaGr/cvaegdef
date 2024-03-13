@@ -1,0 +1,37 @@
+@media print {
+  body {
+    font-family: Arial, sans-serif; /* Fuente para impresión */
+    line-height: 1.6; /* Espaciado entre líneas */
+  }
+
+  .container{
+    max-height: none !important;
+  }
+  header,
+  footer,
+  #descargarboton {
+    display: none; /* Ocultar encabezado, pie de página y botón de descarga al imprimir */
+  }
+
+  .section {
+    margin-bottom: 20px; /* Agregar espacio entre secciones */
+  }
+
+  h2,
+  h3 {
+    margin-top: 20px; /* Agregar espacio antes de los títulos */
+    font-size: 18px; /* Tamaño de fuente para títulos */
+  }
+
+  .card-body {
+    margin-bottom: 20px; /* Agregar espacio entre detalles */
+  }
+
+  p {
+    font-size: 14px; /* Tamaño de fuente para párrafos */
+  }
+
+  .sub-section {
+    page-break-before: always; /* Forzar un salto de página antes de las subsecciones */
+  }
+}
